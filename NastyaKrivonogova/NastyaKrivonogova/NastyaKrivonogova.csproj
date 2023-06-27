@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A8C6BEB-7116-4943-9F73-89AF5D78678C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NastyaKrivonogova</RootNamespace>
+    <AssemblyName>NastyaKrivonogova</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibraryKrivonogova">
+      <HintPath>..\..\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\ClassLibraryKrivonogova.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bdNastyaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bdNastyaDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdNastyaDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bdNastyaDataSet.xsc">
+      <DependentUpon>bdNastyaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet.xss">
+      <DependentUpon>bdNastyaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet1.xsc">
+      <DependentUpon>bdNastyaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet1.xss">
+      <DependentUpon>bdNastyaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet10.xsc">
+      <DependentUpon>bdNastyaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet10.xss">
+      <DependentUpon>bdNastyaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet11.xsc">
+      <DependentUpon>bdNastyaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet11.xss">
+      <DependentUpon>bdNastyaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet12.xsc">
+      <DependentUpon>bdNastyaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet12.xss">
+      <DependentUpon>bdNastyaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet13.xsc">
+      <DependentUpon>bdNastyaDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet13.xss">
+      <DependentUpon>bdNastyaDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet14.xsc">
+      <DependentUpon>bdNastyaDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet14.xss">
+      <DependentUpon>bdNastyaDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet15.xsc">
+      <DependentUpon>bdNastyaDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet15.xss">
+      <DependentUpon>bdNastyaDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet16.xsc">
+      <DependentUpon>bdNastyaDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet16.xss">
+      <DependentUpon>bdNastyaDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet17.xsc">
+      <DependentUpon>bdNastyaDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet17.xss">
+      <DependentUpon>bdNastyaDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet18.xsc">
+      <DependentUpon>bdNastyaDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet18.xss">
+      <DependentUpon>bdNastyaDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet19.xsc">
+      <DependentUpon>bdNastyaDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet19.xss">
+      <DependentUpon>bdNastyaDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet2.xsc">
+      <DependentUpon>bdNastyaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet2.xss">
+      <DependentUpon>bdNastyaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet20.xsc">
+      <DependentUpon>bdNastyaDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet20.xss">
+      <DependentUpon>bdNastyaDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet21.xsc">
+      <DependentUpon>bdNastyaDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet21.xss">
+      <DependentUpon>bdNastyaDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet22.xsc">
+      <DependentUpon>bdNastyaDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet22.xss">
+      <DependentUpon>bdNastyaDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet23.xsc">
+      <DependentUpon>bdNastyaDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet23.xss">
+      <DependentUpon>bdNastyaDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet24.xsc">
+      <DependentUpon>bdNastyaDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet24.xss">
+      <DependentUpon>bdNastyaDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet25.xsc">
+      <DependentUpon>bdNastyaDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet25.xss">
+      <DependentUpon>bdNastyaDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet3.xsc">
+      <DependentUpon>bdNastyaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet3.xss">
+      <DependentUpon>bdNastyaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet4.xsc">
+      <DependentUpon>bdNastyaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet4.xss">
+      <DependentUpon>bdNastyaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet5.xsc">
+      <DependentUpon>bdNastyaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet5.xss">
+      <DependentUpon>bdNastyaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet6.xsc">
+      <DependentUpon>bdNastyaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet6.xss">
+      <DependentUpon>bdNastyaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet7.xsc">
+      <DependentUpon>bdNastyaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet7.xss">
+      <DependentUpon>bdNastyaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet8.xsc">
+      <DependentUpon>bdNastyaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet8.xss">
+      <DependentUpon>bdNastyaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet9.xsc">
+      <DependentUpon>bdNastyaDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="bdNastyaDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdNastyaDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdNastyaDataSet9.xss">
+      <DependentUpon>bdNastyaDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\netcoreapp3.0\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

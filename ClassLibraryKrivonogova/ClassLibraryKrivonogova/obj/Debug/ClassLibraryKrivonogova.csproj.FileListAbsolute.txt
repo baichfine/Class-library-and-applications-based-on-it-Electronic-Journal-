@@ -1,0 +1,9 @@
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\ClassLibraryKrivonogova.dll.config
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\ClassLibraryKrivonogova.dll
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\ClassLibraryKrivonogova.pdb
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\EntityFramework.dll
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\EntityFramework.xml
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\obj\Debug\ClassLibraryKrivonogova.dll
+c:\users\programmist\documents\visual studio 2015\Projects\ClassLibraryKrivonogova\ClassLibraryKrivonogova\obj\Debug\ClassLibraryKrivonogova.pdb
